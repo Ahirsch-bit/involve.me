@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
 import pageObjects.ProjectsPage;
 
 public class ProjectsTest extends BaseTest {
@@ -25,6 +26,7 @@ public class ProjectsTest extends BaseTest {
 	}
 	
 	//Delete Workspace
+	@Description("This tests the ability to delete workspaces.")
 	@Test
 	public void delWorskspace() {
 		ProjectsPage delWs = new ProjectsPage(driver);
